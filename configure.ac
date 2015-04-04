@@ -47,7 +47,7 @@ AC_LANG_CPLUSPLUS
 # *************************************
 # Library checks
 # *************************************
-PKG_CHECK_MODULES([GTKMM], [gtkmm-2.4 >= 2.14.0])
+PKG_CHECK_MODULES([GTKMM], [gtkmm-3.0 >= 3.0])
 AC_SUBST([GTKMM_CFLAGS])
 AC_SUBST([GTKMM_LIBS])
 

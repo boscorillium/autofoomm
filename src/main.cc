@@ -6,11 +6,11 @@
 int
 main(int argc, char** argv)
 {
-    Gtk::Main kit(argc, argv);
+    Glib::RefPtr<Gtk::Application> app =
+    Gtk::Application::create(argc, argv,
+    "org.gtkmm.examples.base");
 
     MainWindow main_window;
 
-    Gtk::Main::run(main_window);
-
-    return 0;
+    return app->run(main_window);
 }
